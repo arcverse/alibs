@@ -8,7 +8,7 @@ plugins {
 }
 
 group = "se.arcver"
-version = "1.0-SNAPSHOT"
+version = "1.0.1"
 
 val kotlinXCoroutinesVersion = "1.7.3"
 val kotlinXSerializationVersion = "1.6.0"
@@ -26,6 +26,8 @@ val flyawayVersion = "9.8.1"
 val gsonVersion = "2.10.1"
 
 val ascendVersion = "2023.4"
+
+val dotenvVersion = "6.4.1"
 
 repositories {
     mavenCentral()
@@ -56,6 +58,7 @@ val shadowDependencies = listOf(
     "org.jetbrains.kotlinx:kotlinx-collections-immutable:$kotlinXCollectionsImmutableVersion",
     "com.google.code.gson:gson:$gsonVersion",
     "org.projectlombok:lombok:$lombokVersion",
+    "io.github.cdimascio:dotenv-kotlin:$dotenvVersion",
 )
 
 dependencies {
@@ -97,7 +100,7 @@ publishing {
         create<MavenPublication>("maven") {
             groupId = "se.arcver"
             artifactId = "alibs"
-            version = "1.0.0"
+            this.version = version
             from(components["java"])
         }
     }
