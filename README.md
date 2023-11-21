@@ -8,7 +8,38 @@ To access the library use the repository and dependency below:
 <details>
   <summary>Gradle + Groovy</summary>
   ```gradle
-    
+    repositories {
+     maven { url 'https://repo.arcver.se/releases/' }
+    }
+    dependencies {
+      implementation("se.arcver:alibs:1.0.2")
+    }
+  ```
+</details>
+<details>
+  <summary>Gradle + Kotlin</summary>
+  ```kt
+    repositories {
+     maven("https://repo.arcver.se/releases/")
+    }
+    dependencies {
+      implementation("se.arcver:alibs:1.0.2")
+    }
+  ```
+</details>
+<details>
+  <summary>Maven</summary>
+  ```xml
+    <repository>
+      <id>arcverse-repo</id>
+      <url>https://repo.arcver.se/releases/</url>
+    </repository>
+    <dependency>
+      <groupId>se.arcver</groupId>
+      <artifactId>alibs</artifactId>
+      <version>1.0.2</version>
+      <scope>provided</scope>
+    </dependency>
   ```
 </details>
 
