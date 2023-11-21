@@ -20,6 +20,7 @@ val reflectionsVersion = "0.11.7"
 val lombokVersion = "1.18.30"
 
 val exposedVersion = "0.44.1"
+val jedisVersion = "5.1.0"
 val eclipseCollectionVersion = "11.1.0"
 val flyawayVersion = "9.8.1"
 
@@ -59,6 +60,7 @@ val shadowDependencies = listOf(
     "com.google.code.gson:gson:$gsonVersion",
     "org.projectlombok:lombok:$lombokVersion",
     "io.github.cdimascio:dotenv-kotlin:$dotenvVersion",
+    "redis.clients:jedis:$jedisVersion",
 )
 
 dependencies {
