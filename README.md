@@ -7,7 +7,8 @@ Alibs brings you everything you need for a basic kotlin app.
 To access the library use the repository and dependency below:
 <details>
   <summary>Gradle + Groovy</summary>
-  ```gradle
+  
+  ```groovy
     repositories {
      maven { url 'https://repo.arcver.se/releases/' }
     }
@@ -18,7 +19,8 @@ To access the library use the repository and dependency below:
 </details>
 <details>
   <summary>Gradle + Kotlin</summary>
-  ```kt
+  
+  ```kotlin
     repositories {
      maven("https://repo.arcver.se/releases/")
     }
@@ -29,6 +31,7 @@ To access the library use the repository and dependency below:
 </details>
 <details>
   <summary>Maven</summary>
+  
   ```xml
     <repository>
       <id>arcverse-repo</id>
