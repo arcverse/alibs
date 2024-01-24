@@ -8,7 +8,7 @@ plugins {
 }
 
 group = "se.arcver"
-version = "1.0.1"
+version = "1.0.3"
 
 val kotlinXCoroutinesVersion = "1.7.3"
 val kotlinXSerializationVersion = "1.6.0"
@@ -19,7 +19,9 @@ val ktorVersion = "2.2.3"
 val reflectionsVersion = "0.11.7"
 val lombokVersion = "1.18.30"
 
-val exposedVersion = "0.44.1"
+val mysqlConnectorVersion = "8.0.33"
+
+val hibernateVersion = "6.4.2.Final"
 val jedisVersion = "5.1.0"
 val eclipseCollectionVersion = "11.1.0"
 val flyawayVersion = "9.8.1"
@@ -47,10 +49,7 @@ val shadowDependencies = listOf(
     "net.oneandone.reflections8:reflections8:$reflectionsVersion",
     "org.jetbrains.kotlinx:kotlinx-coroutines-core:$kotlinXCoroutinesVersion",
     "org.jetbrains.kotlinx:kotlinx-serialization-json:$kotlinXSerializationVersion",
-    "org.jetbrains.exposed:exposed-core:$exposedVersion",
-    "org.jetbrains.exposed:exposed-dao:$exposedVersion",
-    "org.jetbrains.exposed:exposed-jdbc:$exposedVersion",
-    "org.jetbrains.exposed:exposed-java-time:$exposedVersion",
+    "org.hibernate.orm:hibernate-core:$hibernateVersion",
     "io.ktor:ktor-client-core:$ktorVersion",
     "io.ktor:ktor-client-okhttp:$ktorVersion",
     "io.ktor:ktor-client-websockets:$ktorVersion",
@@ -61,6 +60,7 @@ val shadowDependencies = listOf(
     "org.projectlombok:lombok:$lombokVersion",
     "io.github.cdimascio:dotenv-kotlin:$dotenvVersion",
     "redis.clients:jedis:$jedisVersion",
+    "mysql:mysql-connector-java:$mysqlConnectorVersion"
 )
 
 dependencies {
